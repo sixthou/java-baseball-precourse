@@ -14,5 +14,9 @@ public enum BallStatus {
         return this == BALL;
     }
 
+    public boolean isNothing() {
+        return this == NOTHING;
+    }
+
 }
 
