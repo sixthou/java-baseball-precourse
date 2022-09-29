@@ -11,8 +11,8 @@ public class Number {
 
     static {
         NUMBER_MAP = new HashMap<>();
-        for (int i = MIN_NUMBER; i <= MAX_NUMBER; i++) {
-            NUMBER_MAP.put(i, new Number(i));
+        for (int number = MIN_NUMBER; number <= MAX_NUMBER; number++) {
+            NUMBER_MAP.put(number, new Number(number));
         }
     }
 
