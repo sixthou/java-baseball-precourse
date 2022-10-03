@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Number {
 
-    private static final int MIN_NUMBER = 1;
-    private static final int MAX_NUMBER = 9;
+    public static final int MIN_NUMBER = 1;
+    public static final int MAX_NUMBER = 9;
     private static final Map<Integer, Number> NUMBER_MAP;
 
     static {
@@ -42,9 +42,7 @@ public class Number {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-
         Number number1 = (Number) o;
-
         return number == number1.number;
     }
 

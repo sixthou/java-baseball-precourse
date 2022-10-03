@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class Balls {
 
-    private static final int STANDARD_BALLS_SIZE = 3;
+    public static final int STANDARD_BALLS_SIZE = 3;
     private final List<Ball> balls;
 
     public Balls(List<Integer> numbers) {
