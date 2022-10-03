@@ -1,15 +1,18 @@
 package baseball.domain;
 
+import static baseball.domain.GameMachineStatus.FINISH;
+import static baseball.domain.GameMachineStatus.RUNNING;
+
 import java.util.List;
 
 public class BaseBallGame {
 
     private final Computer computer;
-    public GameMachineStatus gameMachineStatus;
+    private GameMachineStatus gameMachineStatus;
 
     public BaseBallGame(PickBallsStrategy pickBallsStrategy) {
         this.computer = new Computer(pickBallsStrategy);
-        gameMachineStatus = GameMachineStatus.RUNNING;
+        gameMachineStatus = RUNNING;
     }
 
     public GameResult playOnce(List<Integer> numbers) {
@@ -20,7 +23,7 @@ public class BaseBallGame {
 
     private void postProcess(GameResult gameResult) {
         if (gameResult.isOut()) {
-            gameMachineStatus = GameMachineStatus.FINISH;
+            gameMachineStatus = FINISH;
         }
     }
 

@@ -8,7 +8,7 @@ public class Computer {
         this.balls = new Balls(pickBallsStrategy.pickBalls());
     }
 
-    public GameResult judgeResult(Balls playerBalls){
+    public GameResult judgeResult(Balls playerBalls) {
         return this.balls.makeGameResult(playerBalls);
     }
 

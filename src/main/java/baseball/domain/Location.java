@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Location {
+
     private final static int MIN_LOCATION = 1;
     private final static int MAX_LOCATION = 3;
     private final static Map<Integer, Location> LOCATION_MAP;
@@ -34,16 +35,13 @@ public class Location {
 
     @Override
     public boolean equals(Object o) {
-
         if (this == o) {
             return true;
         }
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-
         Location location1 = (Location) o;
-
         return location == location1.location;
     }
 

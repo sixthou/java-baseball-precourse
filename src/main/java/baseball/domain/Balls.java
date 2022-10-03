@@ -38,7 +38,7 @@ public class Balls {
     }
 
     private BallStatus compareBallStatus(BallStatus now, BallStatus tobe) {
-        if(!tobe.isNothing()){
+        if (!tobe.isNothing()) {
             return tobe;
         }
         return now;
